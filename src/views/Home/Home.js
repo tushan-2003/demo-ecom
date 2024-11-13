@@ -15,7 +15,7 @@ function HeroButton() {
 	const navigate = useNavigate();
 	return (
 		<StyledHeroButton
-			onClick={() => navigate('/shop')}
+			onClick={() => navigate('/demo-ecom/shop')}
 			size='large'>
 			<Icon name='shopping bag' />
 			Shop Now

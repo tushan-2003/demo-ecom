@@ -13,7 +13,7 @@ const navProps = [
 			active: SolidBagIcon,
 		},
 		linkTxt: 'Shop',
-		to: '/shop',
+		to: '/demo-ecom/shop',
 		childType: 'link',
 	},
 	{
@@ -22,7 +22,7 @@ const navProps = [
 			active: SolidCartIcon,
 		},
 		linkTxt: '',
-		to: '/cart',
+		to: '/demo-ecom/cart',
 		childType: 'link',
 	},
 ];
@@ -33,7 +33,7 @@ export default function NavMenu({ getTotalItemsInCart }) {
 		return <NavItem
 			icon={icon}
 			activeIcon={activeIcon}
-			getTotalItemsInCart={to === '/cart' ? getTotalItemsInCart : null}
+			getTotalItemsInCart={to === '/demo-ecom/cart' ? getTotalItemsInCart : null}
 			linkTxt={linkTxt}
 			to={to}
 			childType={childType}

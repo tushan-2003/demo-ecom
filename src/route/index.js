@@ -26,9 +26,9 @@ export default function Page(props) {
 
 	return useRoutes([
 		{ path: '*', element: <NotFound /> },
-		{ path: '/', element: <Home /> },
+		{ path: '/demo-ecom/', element: <Home /> },
 		{
-			path: '/shop',
+			path: '/demo-ecom/shop',
 			element: <Shop
 				products={products}
 				itemsArrangerMethods={itemsArrangerMethods}
@@ -38,7 +38,7 @@ export default function Page(props) {
 			/>,
 		},
 		{
-			path: '/cart',
+			path: '/demo-ecom/cart',
 			element: <Cart
 				addItemToCart={addItemToCart}
 				resetCart={resetCart}
@@ -48,7 +48,7 @@ export default function Page(props) {
 			/>,
 		},
 		{
-			path: '/shop/product/:id',
+			path: '/demo-ecom/shop/product/:id',
 			element: <Product
 				resetCart={resetCart}
 				setCartItemQty={setCartItemQty}
